@@ -1,0 +1,8 @@
+/* LESSON 2 REFLECTIONS */
+
+Q
+-I think the file .git becomes a holder for tracking what ever is done to the repository in the reflections directory. It is initialized with a structure that GIT uses to update the status of the repository all according to comands given. I do wonder why this repository does not have a namn. Why was the command not giving the new repository a name? I.e. that the command could have looked like this "git init reflections" to create a repository named "reflections".
+
+How is the staging area different from the working directory and the repository? What value do you think it offers?
+It groups the files that are to be commited. The working directory has no such grouping functionality by itself, only acts as the location of the files. I guess the stagining area could contain files from different working directories - is that so? The staging area differs from the repository in that it is a intermeediate area that does not hold a repository structure with all the history of files that are present in the staging area. Files are not to be stored in the staging area as they are in the repository. The value of the staging area is its temporary quality, where the files that are to be commited are placed as the wait for others to be ready for commit.
+
