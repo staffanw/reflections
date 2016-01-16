@@ -1,8 +1,23 @@
 /* LESSON 2 REFLECTIONS */
 
 Q
--I think the file .git becomes a holder for tracking what ever is done to the repository in the reflections directory. It is initialized with a structure that GIT uses to update the status of the repository all according to comands given. I do wonder why this repository does not have a namn. Why was the command not giving the new repository a name? I.e. that the command could have looked like this "git init reflections" to create a repository named "reflections".
+-I think the file .git becomes a holder for tracking whatever is done to the repository in the reflections directory. It is initialized with a structure that GIT uses to update the status of the repository, all according to commands given. I do wonder why this repository does not have a name. Why does the init command not give the new repository a name? I.e. that the command could look like this "git init reflections" to create a repository named "reflections".
 
 How is the staging area different from the working directory and the repository? What value do you think it offers?
-It groups the files that are to be commited. The working directory has no such grouping functionality by itself, only acts as the location of the files. I guess the stagining area could contain files from different working directories - is that so? The staging area differs from the repository in that it is a intermeediate area that does not hold a repository structure with all the history of files that are present in the staging area. Files are not to be stored in the staging area as they are in the repository. The value of the staging area is its temporary quality, where the files that are to be commited are placed as the wait for others to be ready for commit.
+-It groups the files that are to be committed. The working directory has no such grouping functionality by itself, only acts as the location of the files. I guess the staging area could contain files from different working directories - is that so? The staging area differs from the repository in that it is a intermediate area that does not hold a repository structure with all the history of files that are present in the staging area. Files are not to be stored in the staging area as they are in the repository. The value of the staging area is its temporary quality, where the files that are to be committed are placed as the wait for others to be ready for commit.
+
+How can you use the staging area to make sure you have one commit per logical change?
+- If I have made changes to several files I only add to the staging area the ones I want to commit in a logical unit. This will be a committed logical change. Next I add another file or files to be committed in another logical change.
+
+What are some situations when branches would be helpful in keeping your history organized? How would branching help?
+-If I want to try out some code that is not yet in the official version, some unreleased features, this is easily done in a separate branch. It is helpful as it is coordinated with the main branch or trunk and can merge into this later. This helps keeping a released version untouched or even possible to change parallel to a development of new functionality without interfering in the released version.
+
+How do the diagrams help you visualize the branch structure?
+-The diagram shows commits that are possible to checkout in a sequence in time for each branch and in structure showing where a trunk is branched
+
+What is the result of merging two branches together? Why do we represent it in the diagram the way we do?
+-The two branches were added upon one another in such way that our master branch after the merge held both all the changes done in the master branch as well as it held the changes done in the coins branch. The diagram shows the graph following parents lines showing each commits actual parent. This differs from what git log shows in such way as the commits there are listed in timestamp order.
+
+What are the pros and cons of Git’s automatic merging vs. always doing merges manually?
+-automatic merge highlights conflicts and handles the rest of merging automatically
 

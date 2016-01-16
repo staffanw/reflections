@@ -1,16 +1,16 @@
 How did viewing a diff between two versions of a file help you see the bug that was introduced?
--I gave a quick overview on the changes done in the latter file
+-It gave a quick overview on the changes done in the latter file
 -Having the differences isolated made it easy to pinpoint erroneous writing
 
 How could having easy access to the entire history of a file make you a more efficient programmer in the long term?
--It is teedious to save every change an manage that repository. Easy access from a central repository woul simplify this.
--Every time one has to analys an error, an easy access to an entire file history would ensure the most efficient view on the changes ever made as one can trace changes backwards in parrallell only whith the actual other current changes.
+-It is tedious to save every change and manage that repository. Easy access from a central repository would simplify this.
+-Every time one has to analyze an error, an easy access to an entire file history would ensure the most efficient view on the changes ever made as one can trace changes backwards in parallel only with the actual other current changes.
 
 What do you think are the pros and cons of manually choosing when to create a commit, like you do in Git, vs having versions automatically saved, like Google Docs does?
 -It fosters you to make logically distinct commits when it is your decision when to create a commit. Automation is not more than a background safety service that could be useful but that is far from optimal for a programmer.
 
 Why do you think some version control systems, like Git, allow saving multiple files in one commit, while others, like Google Docs, treat each file separately?
--Git supports programming wich typically involves handling parallell changes in multiple files. There is no such grouping of files in Google Docs to date. It is not that common outside programming to handle parallell versioning.
+-Git supports programming which typically involves handling parallel changes in multiple files. There is no such grouping of files in Google Docs to date. It is not that common outside programming to handle parallel versioning.
 
 How can you use the commands git log and git diff to view the history of files?
 -I use git log to see the commits that have been done. Every commit has a unique id. I use git diff to compare to commit, what the changes are between the to commit. I use the commit id to identify the different commits that I want to compare.
