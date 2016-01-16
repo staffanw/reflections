@@ -1,0 +1,4 @@
+When would you want to use a remote repository rather than keeping all your work local?
+-Whenever I work on different mashines and want to work on the same repository. Or if someone else also works on files
+that should go into this directory.
+
