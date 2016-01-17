@@ -1,4 +1,6 @@
 When would you want to use a remote repository rather than keeping all your work local?
--Whenever I work on different mashines and want to work on the same repository. Or if someone else also works on files
-that should go into this directory.
+-Whenever I work on different mashines and I want to work on the same repository. If someone else also works on files
+that should go into this directory it is on to the remote repository that this person will do commits. The remote repository becomes the central common origin.
+
+
 
